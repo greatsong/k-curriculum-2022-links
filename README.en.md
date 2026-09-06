@@ -72,3 +72,7 @@ Releases are tagged `vX.Y.Z` ([CHANGELOG.md](./CHANGELOG.md)). `manifest.standar
 ## License and citation
 
 Data [CC BY 4.0](./LICENSE-DATA) — please also credit the Ministry of Education for the standards text as described in [k-curriculum-2022](https://github.com/greatsong/k-curriculum-2022). Code [MIT](./LICENSE). Cite via [CITATION.cff](./CITATION.cff). Contributions: [CONTRIBUTING.md](./CONTRIBUTING.md), [Code of Conduct](./CODE_OF_CONDUCT.md).
+
+---
+
+<sub>Author: Sukree Song (송석리), teacher at Danggok High School, Seoul ([@greatsong](https://github.com/greatsong)).</sub>

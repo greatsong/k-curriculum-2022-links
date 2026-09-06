@@ -4,7 +4,10 @@
   "description": "2022 개정 교육과정 성취기준 사이의 교과 간 융합 연결 (AI 생성, 검토 후 게시) — k-curriculum-2022의 스핀오프",
   "type": "module",
   "license": "MIT",
-  "repository": { "type": "git", "url": "https://github.com/greatsong/k-curriculum-2022-links.git" },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/greatsong/k-curriculum-2022-links.git"
+  },
   "scripts": {
     "fetch-standards": "node scripts/fetch-standards.mjs",
     "validate": "node scripts/fetch-standards.mjs && node scripts/validate.mjs",
@@ -15,5 +18,14 @@
     "@supabase/supabase-js": "^2.45.0",
     "dotenv": "^17.0.0"
   },
-  "keywords": ["korean-curriculum", "2022-revised-curriculum", "achievement-standards", "knowledge-graph", "convergence-education", "interdisciplinary", "open-data"]
+  "keywords": [
+    "korean-curriculum",
+    "2022-revised-curriculum",
+    "achievement-standards",
+    "knowledge-graph",
+    "convergence-education",
+    "interdisciplinary",
+    "open-data"
+  ],
+  "author": "송석리 Sukree Song <greatsong> (당곡고등학교 교사 / Teacher, Danggok High School)"
 }
