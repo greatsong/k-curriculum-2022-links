@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 📚 성취기준 본문 오류는 k-curriculum-2022로
+    url: https://github.com/greatsong/k-curriculum-2022/issues/new/choose
+    about: 성취기준 코드·본문·학년군 오류는 성취기준 리포에서 받습니다. 이 리포는 연결만 다룹니다.
+  - name: 💬 질문·아이디어·토론
+    url: https://github.com/greatsong/k-curriculum-2022-links/discussions
+    about: 오류 신고가 아닌 질문·활용 사례·제안은 Discussions에서 나눠주세요.
+  - name: 📖 기여 방법
+    url: https://github.com/greatsong/k-curriculum-2022-links/blob/master/CONTRIBUTING.md
+    about: 억지 연결 신고, 후보 검토 PR 절차를 안내합니다.

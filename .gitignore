@@ -1,0 +1,21 @@
+# 비밀키
+.env
+.env.local
+
+# 임베딩 캐시 (용량 문제로 미포함 — 각자 생성)
+embeddings-cache.json
+*.embeddings.json
+
+# 알고리즘 실행 산출물
+algorithm/output/
+algorithm/reports/
+
+# 의존성
+node_modules/
+
+# OS/에디터
+.DS_Store
+*.log
+
+# 고정된 성취기준 릴리스 사본 (scripts/fetch-standards.mjs가 내려받음)
+vendor/

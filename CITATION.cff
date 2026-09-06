@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "이 데이터셋을 사용하실 때 아래와 같이 인용해 주세요. 성취기준 자체는 k-curriculum-2022를 함께 인용해 주세요. / Please cite this dataset as below, and cite k-curriculum-2022 for the standards themselves."
+title: "k-curriculum-2022-links: 2022 개정 교육과정 성취기준 간 교과 융합 연결 데이터셋"
+abstract: >-
+  대한민국 2022 개정 교육과정 성취기준 6,444개 사이에서 서로 다른 교과를 융합 관점으로
+  잇는 연결 3,916개(게시)와 11,758개(후보)를 담은 데이터셋. 임베딩 후보 추출과 LLM 판정의
+  2단계 파이프라인으로 생성했으며 모든 연결에 근거·융합 주제·수업 아이디어가 붙어 있다.
+  성취기준은 k-curriculum-2022 v3.0.0에 고정되어 있다.
+type: dataset
+authors:
+  - family-names: "Song"
+    given-names: "Sukree"
+    alias: greatsong
+license: CC-BY-4.0
+repository-code: "https://github.com/greatsong/k-curriculum-2022-links"
+keywords:
+  - korean-curriculum
+  - 2022-revised-curriculum
+  - knowledge-graph
+  - convergence-education
+  - interdisciplinary
+  - 융합교육
+  - open-data
+version: "1.0.0"
+date-released: "2026-09-06"

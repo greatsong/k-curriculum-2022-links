@@ -1,0 +1,20 @@
+# 연결 데이터 무결성 게이트 — 고정된 성취기준 릴리스를 내려받아 참조 무결성·정규화·점수·게시 정책을 검사한다.
+name: validate links
+
+on:
+  push:
+    branches: [master]
+    paths: ['data/**', 'scripts/**']
+  pull_request:
+    paths: ['data/**', 'scripts/**']
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node scripts/fetch-standards.mjs
+      - run: node scripts/validate.mjs

@@ -1,0 +1,25 @@
+# k-curriculum-2022-links
+
+> 대한민국 2022 개정 교육과정 성취기준 사이의 교과 간 융합 연결 3,916건(게시)·11,758건(후보). AI가 후보를 판정해 만들었고 모든 연결에 근거·융합 주제·수업 아이디어가 있다. 성취기준은 k-curriculum-2022 v3.0.0에 고정. CC BY 4.0.
+> Cross-subject "fusion" links between Korea's 2022 curriculum achievement standards: 3,916 published, 11,758 candidates. AI-judged, each with a rationale, theme, and lesson hook. Standards pinned to k-curriculum-2022 v3.0.0. CC BY 4.0.
+
+Standards themselves (verbatim from the Ministry of Education) live in: https://github.com/greatsong/k-curriculum-2022
+
+## Data
+- [links.published.json](https://raw.githubusercontent.com/greatsong/k-curriculum-2022-links/master/data/links.published.json): quality ≥ 0.7, reviewed policy applied
+- [links.candidate.json](https://raw.githubusercontent.com/greatsong/k-curriculum-2022-links/master/data/links.candidate.json): unreviewed, wide quality range
+- [manifest.json](https://raw.githubusercontent.com/greatsong/k-curriculum-2022-links/master/data/manifest.json): pinned standards release, counts, publishing policy
+
+## Docs
+- [docs/SCHEMA.md](https://github.com/greatsong/k-curriculum-2022-links/blob/master/docs/SCHEMA.md): fields, link types, scores, policy, coverage
+- [data/DATACARD.md](https://github.com/greatsong/k-curriculum-2022-links/blob/master/data/DATACARD.md): intended use, misuse, limitations
+- [KNOWN_ISSUES.md](https://github.com/greatsong/k-curriculum-2022-links/blob/master/KNOWN_ISSUES.md)
+- [docs/NARRATIVE.md](https://github.com/greatsong/k-curriculum-2022-links/blob/master/docs/NARRATIVE.md): why, the two-stage algorithm, and a reproducible agent spec (INVARIANTS, PROCEDURE, OUTPUT contract)
+- [algorithm/](https://github.com/greatsong/k-curriculum-2022-links/tree/master/algorithm): reference implementation
+
+## Invariants for agents
+- Endpoints `source_code`/`target_code` are standards `key` values (not `code`); join on `key` against the pinned release in `manifest.standards_release`.
+- Every link is normalized `source_code < target_code`; direction of prerequisite/extension is described in `rationale`.
+- Published links satisfy `quality_score ≥ manifest.policy.published_min_quality` and have rationale, integration_theme, lesson_hook.
+- Links are AI-generated opinions with evidence, not official curriculum relationships.
+- Run `node scripts/fetch-standards.mjs && node scripts/validate.mjs` before proposing changes.

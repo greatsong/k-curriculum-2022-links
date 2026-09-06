@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-06T11:43:32.780Z",
+  "source": {
+    "app": "greatsong/curriculum-weaver",
+    "commit": "5caa97d",
+    "table": "supabase curriculum_links"
+  },
+  "standards_release": {
+    "repo": "greatsong/k-curriculum-2022",
+    "tag": "v3.0.0",
+    "standards": 6444
+  },
+  "counts": {
+    "links_published": 3916,
+    "links_candidate": 11758
+  },
+  "identity": {
+    "field": "key",
+    "note": "key === code 가 기본. 같은 code가 두 과목에 쓰인 11건만 \"code|subject\" 형식. 링크 끝점(source_code/target_code)은 성취기준의 key 값."
+  },
+  "policy": {
+    "published_min_quality": 0.7,
+    "published_excludes_vocational_pairs": true,
+    "vocational_subject_group": "산업수요전문",
+    "candidate_excludes_rejected": true
+  }
+}
